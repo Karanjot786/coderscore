@@ -1,0 +1,89 @@
+{
+  {
+    "title": "F GALLERY Men's Printed Fleece Hooded Sweatshirt ",
+    "slug": "f-gallery-men-printed-fleece-hooded-s-Black",
+    "desc": "Material Spun Fleece. The Fabric is soft and comfortable to keep your skin safe. Full Sleeve Sweatshirt with 2 side pockets to protect your hands from cold as pockets have enough size. This hooded Sweatshirt has casual yet trendy look that makes it perfect for casual wear and for events too. Pattern Printed Fit Type: Rehular Fit Closure Type: Drawstring; Please refer to the to select your size",
+    "img": "https://m.media-amazon.com/images/I/41PuxtGMdhL._UX679_.jpg",
+    "category": "hood",
+    "size": "S",
+    "color": "Black",
+    "price": 999,
+    "availableQty": 100
+  },
+    {
+      "_id": "63b56a49589a4a236548764d",
+      "title": "RodZen Men's Cotton Half Sleeve Regular Fit Striped T-Shirt",
+      "slug": "rodZen-men-cotton-half-sleeve-s-Black",
+      "desc": "The first thing we need to do inside of main() is",
+      "img": "https://m.media-amazon.com/images/I/91RjuCBoA6L._AC_UL320_.jpg",
+      "category": "hoodies",
+      "size": "S",
+      "color": "Black",
+      "price": 499,
+      "availableQty": 100
+    },
+    {
+      "_id": "63b56a70589a4a2365487654",
+      "title": " Allen Solly Men Polo ",
+      "slug": "karanjot-singh-1",
+      "desc": "The first thing we need to do inside of main() is",
+      "img": "https://m.media-amazon.com/images/I/71hTxMBuZ6L._AC_UL320_.jpg",
+      "category": "hoodies",
+      "size": [
+        "S,M,L,XL,XXL"
+      ],
+      "color": [
+        "Bulack,Red,Pink"
+      ],
+      "price": 499,
+      "availableQty": 100
+    },
+    {
+      "_id": "63b56a70589a4a2365487656",
+      "title": " AELOMART Men's T Shirt-(Amt250105-P_Green) ",
+      "slug": "karanjot-singh-3",
+      "desc": "The first thing we need to do inside of main() is",
+      "img": "https://m.media-amazon.com/images/I/41C5x401H4L._AC_UL320_.jpg",
+      "category": "hoodies",
+      "size": [
+        "S,M,L,XL,XXL"
+      ],
+      "color": [
+        "Bulack,,Red,Blue"
+      ],
+      "price": 499,
+      "availableQty": 100
+    }, 
+    {
+      "_id": "63b56ae9fa4344df9da43d9f",
+      "title": " Max Men Polo ",
+      "slug": "ksd-music-2",
+      "desc": "The first thing we need to do inside of main() is",
+      "img": "https://m.media-amazon.com/images/I/81uSWUUS+TL._AC_UL320_.jpg",
+      "category": "hoodies",
+      "size": [
+        "S,M,L,XL,XXL"
+      ],
+      "color": [
+        "Bulack,Red,Blue,Pink"
+      ],
+      "price": 499,
+      "availableQty": 100
+    },
+    {
+      "_id": "63b56af8fa4344df9da43da2",
+      "title": " London Hills Solid Men's Round Neck Sports T-Shirt ",
+      "slug": "knkfd-kdfnk",
+      "desc": "The first thing we need to do inside of main() is",
+      "img": "https://m.media-amazon.com/images/I/714emthUQuL._AC_UL320_.jpg",
+      "category": "hoodies",
+      "size": [
+        "S,M,L,XL,XXL"
+      ],
+      "color": [
+        "Bulack,,Red,Blue,Pink"
+      ],
+      "price": 499,
+      "availableQty": 100
+    }
+}

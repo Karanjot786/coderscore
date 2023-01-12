@@ -11,10 +11,11 @@ const Tshirts = ({Products}) => {
   <div className="flex flex-wrap -m-4 justify-center">
       {Object.keys(Products).map((item)=>{
 
-        return<div key={Products[item]._id} className=" bg-white  dark:bg-gray-700 lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2"><Link passHref={true} href={`/product/${Products[item].slug}`}>
-        <samp className="bg-white block relative  rounded overflow-hidden">
+        return(
+        <Link className=" bg-white  dark:bg-gray-700 lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2" key={Products[item]._id} passHref={true} href={`/product/${Products[item].slug}`}> <div  >
+        <div className="bg-white block relative  rounded overflow-hidden">
           <img alt="ecommerce" className=" m-auto md:m-0 h-[30vh] md:h-[40vh] block" src={Products[item].img} />
-        </samp>
+        </div>
         <div className="mt-4 text-center md:text-left">
           <h3 className="text-gray-500 dark:text-white text-xs tracking-widest title-font mb-1">T-Shirts</h3>
           <h2 className="text-gray-900 dark:text-white  title-font text-lg font-medium">{Products[item].title}</h2>
@@ -32,8 +33,10 @@ const Tshirts = ({Products}) => {
           {Products[item].color.includes("Pink") && <button className="border-2 border-gray-800 ml-1 bg-pink-700 rounded-full w-6 h-6 focus:outline-none"></button>}
           {Products[item].color.includes("Black") && <button className="border-2 border-gray-800 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>}
           </div>
-        </div></Link>
-      </div>})}
+        </div></div></Link>
+
+        );
+      })}
       
         
       </div></div>

@@ -9,7 +9,7 @@ const Stickers = ({ Products }) => {
       <section className="bg-white  dark:bg-gray-800 text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 justify-center">
-          {Object.keys(Products).length === 0 && <p>Sorry all the Hoodies are out of stock.</p>}
+          {Object.keys(Products).length === 0 && <p className='text-black dark:text-white'>Sorry all the Stickers are currently out of stock. New stockn  coming soon! Stay Tuned</p>}
             {Object.keys(Products).map((item) => {
 
               return <div key={Products[item]._id} className=" bg-white  dark:bg-gray-700 lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2"><Link passHref={true} href={`/product/${Products[item].slug}`}>

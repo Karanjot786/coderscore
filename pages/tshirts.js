@@ -19,7 +19,7 @@ const Tshirts = ({Products}) => {
         <div className="mt-4 text-center md:text-left">
           <h3 className="text-gray-500 dark:text-white text-xs tracking-widest title-font mb-1">T-Shirts</h3>
           <h2 className="text-gray-900 dark:text-white  title-font text-lg font-medium">{Products[item].title}</h2>
-          <p className="mt-1 dark:text-white">{Products[item].price}</p>          
+          <p className="mt-1 dark:text-white">₹ {Products[item].price}</p>          
           <div className="mt-1 dark:text-white">
           {Products[item].size.includes("S") && <span className='border border-gray-600 px-1 mx-1'>S</span>}
           {Products[item].size.includes("M") && <span className='border border-gray-600 px-1 mx-1'>M</span>}

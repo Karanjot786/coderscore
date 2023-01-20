@@ -39,7 +39,7 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
       <div className="container px-5 py-16 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           
-          <img alt="ecommerce" className="lg:w-1/2 my-9 mx-auto  lg:h-auto object-contain rounded-lg" src={product.img} />
+          <img alt="ecommerce" className="lg:w-96 my-9 mx-auto  lg:h-auto object-contain rounded-lg" src={product.img} />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-black dark:text-gray-500 tracking-widest">BRAND NAME</h2>
             <h1 className="text-black dark:text-white text-3xl title-font font-medium mb-1">{product.title}({product.size}/{product.color})</h1>

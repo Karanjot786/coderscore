@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { Html } from 'next/document';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -81,6 +82,7 @@ function MyApp({ Component, pageProps }) {
 
   return <>
        
+       <Html className='overflow-x-hidden'>
       <Head>
         <title>coders core</title>
         <meta charSet="UTF-8" />
@@ -91,6 +93,7 @@ function MyApp({ Component, pageProps }) {
   <Component buyNow={buyNow} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal}  {...pageProps} />
   <Footer />
   </ThemeProvider>
+  </Html>
   </>
 }
 

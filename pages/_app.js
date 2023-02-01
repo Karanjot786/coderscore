@@ -83,6 +83,8 @@ function MyApp({ Component, pageProps }) {
        
       <Head>
         <title>coders core</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
   <ThemeProvider attribute="class">
   <Navbar Logout={Logout} user={user} key={key} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} />

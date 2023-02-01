@@ -1,5 +1,5 @@
 import React from 'react'
-import { mongoose } from "mongoose";
+import mongoose from "mongoose";
 import Product from "../models/Product"
 import Link from 'next/link';
 
@@ -19,7 +19,7 @@ const Stickers = ({ Products }) => {
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 dark:text-white text-xs tracking-widest title-font mb-1">T-Shirts</h3>
                   <h2 className="text-gray-900 dark:text-white  title-font text-lg font-medium">{Products[item].title}</h2>
-                  <p className="mt-1 dark:text-white">₹ {Products[item].price}</p>
+                  <p className="mt-1 dark:text-white">{Products[item].price}</p>
                   
                 </div></Link>
               </div>
@@ -33,9 +33,9 @@ const Stickers = ({ Products }) => {
 }
 
 export async function getServerSideProps(context) {
-  if (!mongoose.connections[0].readyState) {
-  }
-  await mongoose.connect(process.env.MONGO_URI)
+  if(!mongoose.connections[0].readyState){
+    await mongoose.connect(process.env.MONGO_URI);
+}
   let Products = await Product.find({ category: 'stickers' })
   let stickers = {}
   for (let item of Products) {

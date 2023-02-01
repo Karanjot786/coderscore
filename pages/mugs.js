@@ -1,5 +1,5 @@
 import React from 'react'
-import { mongoose } from "mongoose";
+import mongoose from "mongoose";
 import Product from "../models/Product"
 import Link from 'next/link';
 
@@ -33,9 +33,9 @@ const Mugs = ({ Products }) => {
 }
 
 export async function getServerSideProps(context) {
-  if (!mongoose.connections[0].readyState) {
-  }
-  await mongoose.connect(process.env.MONGO_URI)
+  if(!mongoose.connections[0].readyState){
+    await mongoose.connect(process.env.MONGO_URI);
+}
   let Products = await Product.find({ category:'mugs'})
   let mugs = {}
   for (let item of Products) {

@@ -1,0 +1,23 @@
+{
+    "buildCommand": "next build",
+    "devCommand": "next dev",
+    "installCommand": "npm install",
+    "framework": "nextjs",
+    "regions": [
+        "iad1"
+    ],
+    "build": {
+        "env": {
+            "NEXT_PUBLIC_NODE_ENV": "production"
+        }
+    },
+    "functions": {
+        "pages/api/**/*.js": {
+            "memory": 1024,
+            "maxDuration": 10
+        }
+    },
+    "env": {
+        "MONGO_URI": "@mongo_uri"
+    }
+}
